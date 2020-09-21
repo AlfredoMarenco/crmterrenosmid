@@ -22,10 +22,12 @@ class ClientesController extends Controller
 
         if ($level_admin>0) {
             $clientes = Cliente::where('user_id',auth()->id())->orderBy('created_at', 'desc')->paginate(10);
-            return view('components.clientes.tabla-cliente-vendedor',compact('clientes'));    
+            $asesor = User::findOrFail(auth()->id());
+            return view('clientes.tabla-cliente',compact('clientes','asesor'));    
         }else{
             $clientes = Cliente::orderBy('created_at', 'desc')->paginate(10);
-            return view('components.clientes.tabla-cliente',compact('clientes'));  
+            $asesor = User::findOrFail(auth()->id());
+            return view('clientes.tabla-cliente',compact('clientes','asesor'));  
         }
         
     }
@@ -37,7 +39,7 @@ class ClientesController extends Controller
      */
     public function create()
     {
-        return view('components.clientes.add-cliente');
+        return view('clientes.add-cliente');
     }
 
     /**
@@ -72,8 +74,7 @@ class ClientesController extends Controller
         $newCliente->user_id = $request->user_id;
         Mail::to($newCliente->email)->send(new Bienvenida($newCliente));
         $newCliente->save();
-        return redirect('clientes/tabla')->with('success', 'Cliente agregado con exito!');
-            
+        return redirect('clientes/tabla')->with('success', 'Cliente agregado con exito!');  
         } catch (\Throwable $th) {
            return 'hubo un error';
         }
@@ -104,7 +105,7 @@ class ClientesController extends Controller
         $clienteToUser = $cliente->user_id;
         $userAuth = $user_id->id;
         if ($clienteToUser == $userAuth) {
-            return view('components.clientes.edit-cliente', compact('cliente'));
+            return view('clientes.edit-cliente', compact('cliente'));
         }else{
             return $cliente->user_id. " " . $user_id->id;
         }        
@@ -145,6 +146,14 @@ class ClientesController extends Controller
         $clienteEliminado->delete();
 
         return redirect('clientes/tabla')->with('DeleteSuccess','Cliente eliminado con exito');
+    }
+
+    public function showDetail($id)
+    {   
+        $detallesCliente = Cliente::findOrFail($id);
+
+        return view();
+        
     }
 
 }
