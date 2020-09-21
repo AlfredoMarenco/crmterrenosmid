@@ -39,7 +39,7 @@
                             {{ __('Manejo de Cuenta') }}
                         </div>
 
-                        <x-jet-dropdown-link href="/user/profile">
+                        <x-jet-dropdown-link href="./user/profile">
                             {{ __('Perfil') }}
                         </x-jet-dropdown-link>
 
@@ -48,7 +48,7 @@
                             {{ __('Sistema') }}
                         </div>
 
-                        <x-jet-dropdown-link href="/user/profile">
+                        <x-jet-dropdown-link href="./user/profile">
                             {{ __('Sistema') }}
                         </x-jet-dropdown-link>
                         {{-- @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
