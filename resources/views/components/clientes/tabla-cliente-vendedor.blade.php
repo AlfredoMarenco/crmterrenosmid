@@ -40,10 +40,7 @@
                                     <td>
                                         <a href="{{ route('clientes.formedit',$data) }}"><i class="text-secondary far fa-edit"></i></a>
                                         <a href="{{ route('clientes.delete',$data) }}"><i class="text-secondary fas fa-eraser"></i></a>
-                                        <a 
-                                        href="https://wa.me/+521{{$data->telefono}}?text=¡Bienvenido+a+Terrenos+MID+Yucatán!%0A%0ARecibimos+su+solicitud+para+más+información+sobre+nuestro+desarrollo+Residencial+Ciudad+Central.+Soy+{{auth()->user()->name}}%2C+y+seré+la+persona+que+llevara+acabo+su+seguimiento.+%0A%0ALe+damos+las+gracias+por+contactarnos%2C+y+nos+alegra+que+tomará+la+decisión+de+invertir.&sourceid=opera&ie=UTF-8&oe=UTF-8">
-                                        <i class="text-secondary fab fa-whatsapp"></i>
-                                        </a>
+                                    <a href="https://wa.me/+521{{$data->telefono}}?text=¡Bienvenido+a+Terrenos+MID+Yucatán!%0A%0ARecibimos+su+solicitud+para+más+información+sobre+nuestro+desarrollo+Residencial+Ciudad+Central.+Soy+{{auth()->user()->name}}%2C+y+seré+la+persona+que+llevara+acabo+su+seguimiento.+%0A%0ALe+damos+las+gracias+por+contactarnos%2C+y+nos+alegra+que+tomará+la+decisión+de+invertir.&sourceid=opera&ie=UTF-8&oe=UTF-8"><i class="text-secondary fab fa-whatsapp"></i></a>
                                     </td>
                                 </tr>
                 

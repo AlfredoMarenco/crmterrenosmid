@@ -24,6 +24,10 @@ class CreateClientesTable extends Migration
             $table->string('pais')->nullable();
             $table->string('campana')->nullable();
             $table->string('estado')->default('Nuevo');
+            $table->string('lead1')->default('no-complete');
+            $table->string('lead2')->default('no-complete');
+            $table->string('lead3')->default('no-complete');
+            $table->string('lead4')->default('no-complete');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
