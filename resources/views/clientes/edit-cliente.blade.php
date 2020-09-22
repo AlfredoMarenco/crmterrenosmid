@@ -43,7 +43,7 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control form-control-sm" placeholder="Email" name="email" id="email" value="{{ $cliente->email }}" >
+                            <input type="email" class="form-control form-control-sm" placeholder="Email" disabled name="email" id="email" value="{{ $cliente->email }}" >
                         </div>
                     </div>
                     <div class="form-row">

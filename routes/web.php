@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ClientesController;
+use App\Http\Controllers\CotizadoresController;
 use App\Http\Controllers\DesarrollosController;
 use Illuminate\Support\Facades\Route;
 use PHPUnit\TextUI\XmlConfiguration\Group;
@@ -28,6 +29,11 @@ Route::prefix('users')->middleware('auth')->group(function () {
     Route::any('/elimnar/{id}', [UsuariosController::class, 'destroy'])->name('users.delete');
 });
 
+Route::prefix('users')->middleware('auth')->group(function () {
+    Route::get('desarrollos',[CotizadoresController::class, 'index'])->name('cotizadores');
+});
+
+
 Route::get('sistema',[ConfigurationController::class, 'index'])->name('sistem.config');
 Route::get('desarrollos',[DesarrollosController::class, 'index'])->name('desarrollos');
 
@@ -40,6 +46,3 @@ Route::get('/user/profile', function(){
  return view('profile.show');
 })->name('profile');
 
-Route::get('/email/verify', function () {
-    return view('auth.verify-email');
-})->middleware(['auth'])->name('verification.notice');

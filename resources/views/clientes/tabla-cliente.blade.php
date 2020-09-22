@@ -48,7 +48,7 @@
                                         @if($asesor->name == $data->user->name)
                                         <a href="https://wa.me/52{{$data->telefono}}?text=¡Bienvenido+a+Terrenos+MID+Yucatán!%0A%0ARecibimos+su+solicitud+para+más+información+sobre+nuestro+desarrollo+Residencial+Ciudad+Central.+Soy+{{auth()->user()->name}}%2C+y+seré+la+persona+que+llevara+acabo+su+seguimiento.+%0A%0ALe+damos+las+gracias+por+contactarnos%2C+y+nos+alegra+que+tomará+la+decisión+de+invertir.&sourceid=opera&ie=UTF-8&oe=UTF-8"><i class="text-secondary fab fa-whatsapp"></i></a>
                                         @else
-                                        <a disabled href="https://wa.me/52{{$data->telefono}}?text=¡Bienvenido+a+Terrenos+MID+Yucatán!%0A%0ARecibimos+su+solicitud+para+más+información+sobre+nuestro+desarrollo+Residencial+Ciudad+Central.+Soy+{{auth()->user()->name}}%2C+y+seré+la+persona+que+llevara+acabo+su+seguimiento.+%0A%0ALe+damos+las+gracias+por+contactarnos%2C+y+nos+alegra+que+tomará+la+decisión+de+invertir.&sourceid=opera&ie=UTF-8&oe=UTF-8"><i class="text-danger fab fa-whatsapp"></i></a>    
+                                        <a href="#" class="disabled" tabindex="-1" role="button" aria-disabled="true"><i class="text-danger fab fa-whatsapp" data-toggle="tooltip" data-placement="top" title="Cliente de otro asesor"></i></a>    
                                         @endif
                                     </td>
                                 </tr>
