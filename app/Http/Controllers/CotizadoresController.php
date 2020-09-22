@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Cliente;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class CotizadoresController extends Controller
@@ -15,6 +17,34 @@ class CotizadoresController extends Controller
     public function index()
     {
         return view('cotizadores.lista-cotizadores');
+    }
+
+    /**
+     * Display a listing of the resource in select from the form cotizador grupo orve.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function formGrupoOrve()
+    {
+        $user_id = User::findOrFail(auth()->id());
+        $level_admin = $user_id->level_admin;
+
+        if ($level_admin>0) {
+
+            // $clientes = Cliente::whereColumn([
+            //     ['user_id', '=', $user_id->id],
+            //     ['desarrollo', '=', "CIUDAD CENTRAL"],
+            // ])->orderBy('created_at', 'desc')->get();
+            $clientes = Cliente::where('user_id',auth()->id())->where('desarrollo','CIUDAD CENTRAL')->orderBy('created_at', 'desc')->get();
+            $asesor = User::findOrFail(auth()->id());
+            return view('cotizadores.cotizador-grupoorve', compact('clientes')); 
+        }else{
+            $clientes = Cliente::orderBy('created_at', 'desc')->get();
+            $asesor = User::findOrFail(auth()->id());
+            return view('cotizadores.cotizador-grupoorve', compact('clientes'));
+            
+        }
+        
     }
 
     /**

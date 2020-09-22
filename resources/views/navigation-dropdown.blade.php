@@ -18,11 +18,11 @@
                     <x-jet-nav-link href="{{route('clientes.tabla')}}" :active="request()->routeIs('clientes.tabla')">
                         {{ __('Clientes') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{route('desarrollos')}}" :active="request()->routeIs('desarrollos')">
-                        {{ __('Desarrollos') }}
-                    </x-jet-nav-link>
                     <x-jet-nav-link href="{{route('cotizadores')}}" :active="request()->routeIs('cotizadores')">
                         {{ __('Cotizador') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{route('desarrollos')}}" :active="request()->routeIs('desarrollos')">
+                        {{ __('Desarrollos') }}
                     </x-jet-nav-link>
                 </div>
             </div>
@@ -127,6 +127,12 @@
             </x-jet-responsive-nav-link>
             <x-jet-responsive-nav-link href="{{ route('clientes.tabla') }}" :active="request()->routeIs('clientes.tabla')">
                 {{ __('Clientes') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('cotizadores') }}" :active="request()->routeIs('cotizadores')">
+                {{ __('Cotizador') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('desarrollos') }}" :active="request()->routeIs('desarrollos')">
+                {{ __('Desarrollos') }}
             </x-jet-responsive-nav-link>
         </div>
 

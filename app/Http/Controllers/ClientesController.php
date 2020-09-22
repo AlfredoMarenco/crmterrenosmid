@@ -21,6 +21,7 @@ class ClientesController extends Controller
         $level_admin = $user_id->level_admin;
 
         if ($level_admin>0) {
+            
             $clientes = Cliente::where('user_id',auth()->id())->orderBy('created_at', 'desc')->paginate(10);
             $asesor = User::findOrFail(auth()->id());
             return view('clientes.tabla-cliente',compact('clientes','asesor'));    
@@ -152,7 +153,7 @@ class ClientesController extends Controller
     {   
         $detallesCliente = Cliente::findOrFail($id);
 
-        return view();
+        return view('clientes.detail-cliente',compact($detallesCliente));
         
     }
 

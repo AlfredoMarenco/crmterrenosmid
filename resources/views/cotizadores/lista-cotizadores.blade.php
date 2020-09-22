@@ -5,13 +5,13 @@
         </h2>
     </x-slot>
 
-    <div class="py-1">
+    <div class="py-3">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-6">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <div class=""><h3>Inmobiliarias</h3></div>
+                <div class="text-center my-3"><h3>Inmobiliarias</h3></div>
                 <div class="list-group text-center">
-                    <a class="list-group-item list-group-item-action">GRUPO ORVE</a>
-                    <a class="list-group-item list-group-item-action">SOMMET</a>
+                    <a href="{{ route('cotizador.grupoorve') }}" class="list-group-item list-group-item-action">GRUPO ORVE</a>
+                    <a href="#" class="list-group-item list-group-item-action">SOMMET</a>
                   </div>
             </div>
         </div>

@@ -29,8 +29,11 @@ Route::prefix('users')->middleware('auth')->group(function () {
     Route::any('/elimnar/{id}', [UsuariosController::class, 'destroy'])->name('users.delete');
 });
 
-Route::prefix('users')->middleware('auth')->group(function () {
-    Route::get('desarrollos',[CotizadoresController::class, 'index'])->name('cotizadores');
+Route::prefix('cotizadores')->middleware('auth')->group(function () {
+    Route::get('/',[CotizadoresController::class, 'index'])->name('cotizadores');
+    Route::get('/grupoorve',[CotizadoresController::class, 'formGrupoOrve'])->name('cotizador.grupoorve');
+    Route::post('/cotizacion',[CotizadoresController::class, 'formGrupoOrve'])->name('cotizador.cotizaciongrupoorve');
+
 });
 
 
