@@ -16,7 +16,7 @@
                             <select name="cliente" class="form-control" required>
                               <option selected disabled value="">-Seleccionar Cliente-</option>
                               @foreach($clientes as $data)
-                              <option value="{{$data->id}}">{{ $data->nombre. " - " . $data->email }}</option>
+                              <option value="{{$data->id}}">{{ $data->nombre. " " .$data->primerApellido. " - ".$data->email }}</option>
                               @endforeach
                             </select>
                           </div>
