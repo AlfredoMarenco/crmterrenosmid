@@ -32,7 +32,7 @@
                 <x-jet-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition duration-150 ease-in-out">
-                            <img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
+                            <img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name}}" />
                         </button>
                     </x-slot>
 
@@ -42,7 +42,7 @@
                             {{ __('Manejo de Cuenta') }}
                         </div>
 
-                        <x-jet-dropdown-link href="{{route('profile')}}">
+                        <x-jet-dropdown-link href="/user/profile">
                             {{ __('Perfil') }}
                         </x-jet-dropdown-link>
 
@@ -151,7 +151,7 @@
 
             <div class="mt-3 space-y-1">
                 <!-- Account Management -->
-                <x-jet-responsive-nav-link href="user/profile" :active="request()->routeIs('profile.show')">
+                <x-jet-responsive-nav-link href="user/profile" :active="request()->routeIs('user/profile')">
                     {{ __('Perfil') }}
                 </x-jet-responsive-nav-link>
 
