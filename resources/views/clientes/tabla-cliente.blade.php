@@ -23,25 +23,21 @@
                         <thead class="thead-dark">
                             <tr>
                                 <th scope="col">Nombre</th>
-                                <th scope="col">Desarollo</th>
                                 <th scope="col">Telefono</th>
                                 <th scope="col">Correo</th>
                                 <th scope="col">Asesor</th>
-                                <th scope="col">Estado</th>
                                 <th scope="col">-</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($clientes as $data) 
-                                <tr>
+                                <tr class="table-{{ $data->estado == 'Nuevo' ? 'success' : 'warning' }}">
                                     <td>
                                         <a class="text-secondary" href="{{ route('clientes.detalles',$data) }}">{{ $data->nombre . " " . $data->primerApellido }}</a>
                                     </td>
-                                    <td>{{ $data->desarrollo}}</td>
                                     <td>{{'+52'}}{{ $data->telefono }}</td>
                                     <td>{{ $data->email }}</td>
                                     <td>{{ $data->user->name}}</td>
-                                    <td>{{ $data->estado }}</td>
                                     <td>
                                         <a href="{{ route('clientes.formedit',$data) }}"><i class="text-secondary far fa-edit"></i></a>
                                         <a href="{{ route('clientes.delete',$data) }}"><i class="text-secondary fas fa-eraser"></i></a>
@@ -61,23 +57,19 @@
                         <thead class="thead-dark">
                             <tr>
                                 <th scope="col">Nombre</th>
-                                <th scope="col">Desarollo</th>
                                 <th scope="col">Telefono</th>
                                 <th scope="col">Correo</th>
-                                <th scope="col">Estado</th>
                                 <th scope="col">-</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($clientes as $data) 
-                                <tr>
+                                <tr class="table-{{ $data->estado == 'Nuevo' ? 'success' : 'warning' }}">
                                     <td>
                                         <a class="text-secondary" href="{{ route('clientes.detalles',$data) }}">{{ $data->nombre . " " . $data->primerApellido }}</a>
                                     </td>
-                                    <td>{{ $data->desarrollo}}</td>
                                     <td>{{'+52'}}{{ $data->telefono }}</td>
                                     <td>{{ $data->email }}</td>
-                                    <td>{{ $data->estado }}</td>
                                     <td>
                                         <a href="{{ route('clientes.formedit',$data) }}"><i class="text-secondary far fa-edit"></i></a>
                                         <a href="{{ route('clientes.delete',$data) }}"><i class="text-secondary fas fa-eraser"></i></a>

@@ -12,8 +12,8 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                    <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('Tablero')">
+                        {{ __('Tablero') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="{{route('clientes.tabla')}}" :active="request()->routeIs('clientes.tabla')">
                         {{ __('Clientes') }}
@@ -37,11 +37,11 @@
                     </x-slot>
 
                     <x-slot name="content">
-                        <!-- Account Management -->
+                         <!-- Account Management -->
                         <div class="block px-4 py-2 text-xs text-gray-400">
-                            {{ __('Manejo de Cuenta') }}
+                            {{ Auth::user()->name }}
                         </div>
-
+                    {{--
                         <x-jet-dropdown-link href="/user/profile">
                             {{ __('Perfil') }}
                         </x-jet-dropdown-link>
@@ -53,7 +53,7 @@
 
                         <x-jet-dropdown-link href="/user/profile">
                             {{ __('Sistema') }}
-                        </x-jet-dropdown-link>
+                        </x-jet-dropdown-link> --}}
                         {{-- @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                             <x-jet-dropdown-link href="/user/api-tokens">
                                 {{ __('API Tokens') }}
@@ -151,9 +151,9 @@
 
             <div class="mt-3 space-y-1">
                 <!-- Account Management -->
-                <x-jet-responsive-nav-link href="user/profile" :active="request()->routeIs('user/profile')">
+                {{-- <x-jet-responsive-nav-link href="user/profile" :active="request()->routeIs('user/profile')">
                     {{ __('Perfil') }}
-                </x-jet-responsive-nav-link>
+                </x-jet-responsive-nav-link> --}}
 
                 {{-- @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                     <x-jet-responsive-nav-link href="/user/api-tokens" :active="request()->routeIs('api-tokens.index')">
