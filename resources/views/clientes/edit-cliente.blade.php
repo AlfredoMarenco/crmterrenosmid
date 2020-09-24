@@ -61,6 +61,7 @@
                             </select>
                         </div>
                         <input type="hidden" value="{{ auth()->id() }}" name="user_id">
+                        <input type="hidden" value="{{ $cliente->estado }}" name="estado">
                     </div>
 
                     <button type="submit" class="btn btn-success btn-sm btn-block">Editar Contacto</button>

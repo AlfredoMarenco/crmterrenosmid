@@ -17,7 +17,8 @@ Route::prefix('clientes')->middleware('auth')->group(function () {
     Route::get('/formedit/{id}', [ClientesController::class, 'edit'])->name('clientes.formedit');
     Route::put('/formedit/{id}', [ClientesController::class, 'update'])->name('clientes.edit');
     Route::any('/elimnar/{id}', [ClientesController::class, 'destroy'])->name('clientes.delete');
-    Route::get('/detalles/{id}', [ClientesController::class, 'showDetail'])->name('clientes.detalles');
+    Route::get('/detalles/{id}', [ClientesController::class, 'show'])->name('clientes.detalles');
+    Route::any('/editstatus/{id}', [ClientesController::class, 'updateStatus'])->name('clientes.updatestatus');
 });
 
 Route::prefix('users')->middleware('auth')->group(function () {

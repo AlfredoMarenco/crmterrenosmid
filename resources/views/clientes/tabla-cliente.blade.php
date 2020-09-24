@@ -8,7 +8,12 @@
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                     <div class="row p-1">
-                        <div class="col-md-10"></div>
+                        <div class="col-md-10">
+                            <span class="badge badge-pill badge-primary">Nuevo</span>
+                            <span class="badge badge-pill badge-info">Proceso</span>
+                            <span class="badge badge-pill badge-success">Completado</span>
+                            <span class="badge badge-pill badge-danger">Perdido</span>
+                        </div>
                         <div class="col-md-2"><a href="{{ route('clientes.formadd') }}" class="btn btn-success btn-sm btn-block"><i class="fas fa-user-plus"></i>  Agregar Cliente</a></div>
                     </div>
                 </div>
@@ -31,7 +36,23 @@
                         </thead>
                         <tbody>
                             @foreach ($clientes as $data) 
-                                <tr class="table-{{ $data->estado == 'Nuevo' ? 'success' : 'warning' }}">
+                                @switch($data->estado)
+                                    @case('Nuevo')
+                                    <tr class="table-primary">
+                                        @break
+                                    @case('Proceso')
+                                    <tr class="table-info">                                        
+                                        @break
+                                    @case('Completado')
+                                    <tr class="table-success">                                        
+                                        @break
+                                    @case('Perdido')
+                                    <tr class="table-danger">                                        
+                                        @break    
+                                    @default
+                                    <tr>
+                                        @break
+                                @endswitch
                                     <td>
                                         <a class="text-secondary" href="{{ route('clientes.detalles',$data) }}">{{ $data->nombre . " " . $data->primerApellido }}</a>
                                     </td>
@@ -64,7 +85,23 @@
                         </thead>
                         <tbody>
                             @foreach ($clientes as $data) 
-                                <tr class="table-{{ $data->estado == 'Nuevo' ? 'success' : 'warning' }}">
+                            @switch($data->estado)
+                                    @case('Nuevo')
+                                    <tr class="table-primary">
+                                        @break
+                                    @case('Proceso')
+                                    <tr class="table-info">                                        
+                                        @break
+                                    @case('Completado')
+                                    <tr class="table-success">                                        
+                                        @break
+                                    @case('Perdido')
+                                    <tr class="table-danger">                                        
+                                        @break    
+                                    @default
+                                    <tr>
+                                        @break
+                                @endswitch
                                     <td>
                                         <a class="text-secondary" href="{{ route('clientes.detalles',$data) }}">{{ $data->nombre . " " . $data->primerApellido }}</a>
                                     </td>

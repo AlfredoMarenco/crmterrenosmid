@@ -51,7 +51,6 @@ class ClientesController extends Controller
      */
     public function store(Request $request)
     {
-        try {
         $request->validate([
             'nombre' => 'required',
             'primerApellido' => 'required',
@@ -76,9 +75,6 @@ class ClientesController extends Controller
         Mail::to($newCliente->email)->send(new Bienvenida($newCliente));
         $newCliente->save();
         return redirect('clientes/tabla')->with('success', 'Cliente agregado con exito!');  
-        } catch (\Throwable $th) {
-           return 'hubo un error';
-        }
     }
 
     /**
@@ -89,7 +85,9 @@ class ClientesController extends Controller
      */
     public function show($id)
     {
-        //
+        $detallesCliente = Cliente::findOrFail($id);
+
+        return view('clientes.detail-cliente',compact('detallesCliente'));
     }
 
     /**
@@ -134,6 +132,22 @@ class ClientesController extends Controller
 
         return redirect('clientes/tabla')->with('UpdateSuccess','Actualizacion realizada');
     }
+      /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function updateStatus(Request $request, $id)
+    {
+        $clienteUpdate = Cliente::findOrFail($id);
+        $clienteUpdate->estado = $request->estado;
+
+        $clienteUpdate->save();
+
+        return redirect('clientes/tabla')->with('UpdateSuccess','Actualizacion realizada');
+    }
 
     /**
      * Remove the specified resource from storage.
@@ -149,12 +163,5 @@ class ClientesController extends Controller
         return redirect('clientes/tabla')->with('DeleteSuccess','Cliente eliminado con exito');
     }
 
-    public function showDetail($id)
-    {   
-        $detallesCliente = Cliente::findOrFail($id);
-
-        return view('clientes.detail-cliente',compact($detallesCliente));
-        
-    }
 
 }
