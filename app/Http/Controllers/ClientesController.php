@@ -86,8 +86,8 @@ class ClientesController extends Controller
     public function show($id)
     {
         $detallesCliente = Cliente::findOrFail($id);
-
-        return view('clientes.detail-cliente',compact('detallesCliente'));
+        $asesor = User::findOrFail(auth()->id());
+        return view('clientes.detail-cliente',compact('detallesCliente','asesor'));
     }
 
     /**
@@ -161,6 +161,20 @@ class ClientesController extends Controller
         $clienteEliminado->delete();
 
         return redirect('clientes/tabla')->with('DeleteSuccess','Cliente eliminado con exito');
+    }
+
+
+      /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function showPhoneTrack($id)
+    {
+        $detallesCliente = Cliente::findOrFail($id);
+        $asesor = User::findOrFail(auth()->id());
+        return view('clientes.phone-track',compact('detallesCliente','asesor'));
     }
 
 

@@ -4,7 +4,6 @@
             {{ __('Detalle del cliente') }}
         </h2>
     </x-slot>
-
     <div class="py-1">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-6">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
@@ -42,6 +41,19 @@
                         <label class="text-secondary">Fecha de Creacion</label>
                         <p class="font-weight-bold">{{$detallesCliente->created_at}}</p>
                     </div>
+                    @if ($asesor->level_admin!='0')
+                    <div class="col-md-3">
+                        <label class="text-secondary">Estado Lead</label>
+                        <form action="{{ route('clientes.updatestatus',$detallesCliente->id) }}">
+                            @method('PUT')                            
+                            <select class="form-control form-control-sm" name="estado" onchange="this.form.submit()">
+                                <option value="Nuevo" {{ $detallesCliente->estado == 'Nuevo' ? 'selected' : ''}}>Nuevo</option>
+                                <option value="Proceso" {{ $detallesCliente->estado == 'Proceso' ? 'selected' : ''}}>Proceso</option>
+                                <option value="Perdido" {{ $detallesCliente->estado == 'Perdido' ? 'selected' : ''}}>Perdido</option>
+                            </select>
+                        </form>
+                    </div>                  
+                    @else
                     <div class="col-md-3">
                         <label class="text-secondary">Estado Lead</label>
                         <form action="{{ route('clientes.updatestatus',$detallesCliente->id) }}">
@@ -53,7 +65,9 @@
                                 <option value="Perdido" {{ $detallesCliente->estado == 'Perdido' ? 'selected' : ''}}>Perdido</option>
                             </select>
                         </form>
-                    </div>
+                    </div>    
+                    
+                    @endif
                 </div>
                 <hr>
                 <div class="row p-4 text-center">

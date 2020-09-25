@@ -56,7 +56,7 @@
                                     <td>
                                         <a class="text-secondary" href="{{ route('clientes.detalles',$data) }}">{{ $data->nombre . " " . $data->primerApellido }}</a>
                                     </td>
-                                    <td>{{'+52'}}{{ $data->telefono }}</td>
+                                    <td><a href="{{ route('clientes.phonetrack',$data) }}" class="text-secondary">{{'+52'}}{{ $data->telefono }}</a></td>
                                     <td>{{ $data->email }}</td>
                                     <td>{{ $data->user->name}}</td>
                                     <td>

@@ -19,6 +19,7 @@ Route::prefix('clientes')->middleware('auth')->group(function () {
     Route::any('/elimnar/{id}', [ClientesController::class, 'destroy'])->name('clientes.delete');
     Route::get('/detalles/{id}', [ClientesController::class, 'show'])->name('clientes.detalles');
     Route::any('/editstatus/{id}', [ClientesController::class, 'updateStatus'])->name('clientes.updatestatus');
+    Route::any('/phone-track/{id}', [ClientesController::class, 'showPhoneTrack'])->name('clientes.phonetrack');
 });
 
 Route::prefix('users')->middleware('auth')->group(function () {
