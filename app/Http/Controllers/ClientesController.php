@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\Bienvenida;
+use Illuminate\Support\Facades\Auth;
 
 class ClientesController extends Controller
 {
@@ -72,7 +73,8 @@ class ClientesController extends Controller
         $newCliente->pais = $request->pais;
         $newCliente->campana = $request->campana;
         $newCliente->user_id = $request->user_id;
-        Mail::to($newCliente->email)->send(new Bienvenida($newCliente));
+        $email = Auth::user()->email;
+        Mail::to($newCliente->email)->send(new Bienvenida($newCliente , $email));
         $newCliente->save();
         return redirect('clientes/tabla')->with('success', 'Cliente agregado con exito!');  
     }

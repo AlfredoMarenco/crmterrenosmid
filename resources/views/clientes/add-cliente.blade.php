@@ -63,6 +63,8 @@
                             </select>
                         </div>
                         <input type="hidden" value="{{ auth()->id() }}" name="user_id">
+
+                        {{ var_dump(auth()-) }}
                     </div>
 
                     <button type="submit" class="btn btn-success btn-sm btn-block">Agregar Contacto</button>
