@@ -73,7 +73,7 @@ class ClientesController extends Controller
         $newCliente->pais = $request->pais;
         $newCliente->campana = $request->campana;
         $newCliente->user_id = $request->user_id;
-        $email = Auth::user()->email;
+        $email = Auth::user()->name;
         Mail::to($newCliente->email)->send(new Bienvenida($newCliente , $email));
         $newCliente->save();
         return redirect('clientes/tabla')->with('success', 'Cliente agregado con exito!');  
