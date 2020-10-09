@@ -12,7 +12,7 @@
                 <div class="list-group text-center">
 
                     <a href="crm/vistas/cotizadorgrupoorve.php" class="font-weight-bold list-group-item list-group-item-action">GRUPO ORVE</a>
-                    <a href="crm/vistas/cotizacionsommet.php" class="font-weight-bold list-group-item list-group-item-action">SOMMET</a>
+                    <a href="crm/vistas/cotizadorsommet.php" class="font-weight-bold list-group-item list-group-item-action">SOMMET</a>
                   </div>
             </div>
         </div>
