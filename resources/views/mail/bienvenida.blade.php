@@ -6,7 +6,7 @@
   <meta name="x-apple-disable-message-reformatting"> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
   <meta content="telephone=no" name="format-detection"> 
-  <title>New email 3</title> 
+  <title>Bienvenido {{ $info->nombre ." ". $info->primerApellido }}</title> 
   <!--[if (mso 16)]>
     <style type="text/css">
     a {text-decoration: none;}
@@ -129,7 +129,140 @@ td .es-button-border:hover a.es-button-5 {
              </tr> 
            </table></td> 
          </tr> 
-       </table> 
+	   </table>
+	   <table cellpadding="0" cellspacing="0" class="es-content" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%"> 
+		<tr style="border-collapse:collapse"> 
+		 <td align="center" bgcolor="#ffffff" style="padding:0;Margin:0;background-color:#FFFFFF"> 
+		  <table bgcolor="transparent" class="es-content-body" align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px"> 
+			<tr style="border-collapse:collapse"> 
+			 <td class="es-m-p0t es-m-p20b es-m-p15r es-m-p15l" align="left" style="padding:0;Margin:0;padding-bottom:20px"> 
+			  <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
+				<tr style="border-collapse:collapse"> 
+				 <td align="center" valign="top" style="padding:0;Margin:0;width:600px"> 
+				  <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="center" style="padding:20px;Margin:0;font-size:0"> 
+					  <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
+						<tr style="border-collapse:collapse"> 
+						 <td style="padding:0;Margin:0;border-bottom:1px solid #CCCCCC;background:none;height:1px;width:100%;margin:0px"></td> 
+						</tr> 
+					  </table></td> 
+					</tr> 
+				  </table></td> 
+				</tr> 
+			  </table></td> 
+			</tr> 
+		  </table></td> 
+		</tr> 
+	  </table> 
+	  <table cellpadding="0" cellspacing="0" class="es-content" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%"> 
+		<tr style="border-collapse:collapse"> 
+		 <td align="center" bgcolor="#ffffff" style="padding:0;Margin:0;background-color:#FFFFFF"> 
+		  <table bgcolor="transparent" class="es-content-body" align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px"> 
+			<tr style="border-collapse:collapse"> 
+			 <td class="es-m-p0t es-m-p20b es-m-p15r es-m-p15l" align="left" style="padding:0;Margin:0;padding-bottom:20px"> 
+			  <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
+				<tr style="border-collapse:collapse"> 
+				 <td align="center" valign="top" style="padding:0;Margin:0;width:600px"> 
+				  <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="center" style="padding:0;Margin:0"><h2 style="Margin:0;line-height:34px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:28px;font-style:normal;font-weight:bold;color:#212121;text-align:center">PROYECTO PALUMAR 2</h2><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#131313">Proyecto Semi-Urbanizado</p></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="left" class="es-m-txt-c" style="padding:0;Margin:0;padding-top:15px"><h2 style="Margin:0;line-height:29px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:24px;font-style:normal;font-weight:bold;color:#212121"><strong>Proyecto cerca de la playa</strong></h2><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#131313">Es un proyecto de lotes semi urbanizados&nbsp;<strong>se encuentra a<span>&nbsp;</span><span>8 min</span><span>&nbsp;</span>de la playa de Chicxulub puerto</strong>&nbsp;y 25 min del norte de la ciudad, son terrenos de propiedad privada listos para escriturar, todo el tema de servicios será de manera gratuita por parte del municipio de<strong><span>&nbsp;</span>Chicxulub Puerto.<br></strong><br></p></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="center" class="es-m-p0t es-m-p0b es-m-p15r es-m-p15l" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="https://hs-7785503.f.hubspotfree.net/hub/7785503/hubfs/Mapa%20de%20tiempos.png?upscale=true&amp;width=5100&amp;upscale=true&amp;name=Mapa%20de%20tiempos.png" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="600"></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="center" style="padding:0;Margin:0"><h2 style="Margin:0;line-height:34px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:28px;font-style:normal;font-weight:bold;color:#212121;text-align:center">UBICACION DE PALUMAR</h2></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="center" class="es-m-p0t es-m-p0b es-m-p15r es-m-p15l" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="https://hs-7785503.f.hubspotfree.net/hub/7785503/hubfs/Etapa%202.png?upscale=true&amp;width=9168&amp;upscale=true&amp;name=Etapa%202.png" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="600"></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="center" bgcolor="#13434b" style="padding:0;Margin:0"><h2 style="Margin:0;line-height:34px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:28px;font-style:normal;font-weight:bold;color:#FFFFFF;text-align:center">¡Pregunta por la disponibilidad!</h2></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="left" class="es-m-txt-c" bgcolor="#13434b" style="padding:0;Margin:0;padding-right:5px;padding-left:10px;padding-top:15px"><h2 style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:24px;font-style:normal;font-weight:bold;color:#FFFFFF"><strong>Características de Palumar:</strong></h2> 
+					  <ul> 
+					   <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;Margin-bottom:15px;color:#FFFFFF">Anticipos desde $15,000</li> 
+					   <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;Margin-bottom:15px;color:#FFFFFF">Financiamiento en terreno hasta los 42 meses</li> 
+					   <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;Margin-bottom:15px;color:#FFFFFF">Lotes de 350m2</li> 
+					   <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;Margin-bottom:15px;color:#FFFFFF">Lotes con acceso en calle blanca</li> 
+					   <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;Margin-bottom:15px;color:#FFFFFF">Se entregará con mojoneras frontales<br><br><strong>¡SOLICITA LA PROMOCIÓN DEL MES!</strong></li> 
+					  </ul><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;color:#FFFFFF"><br></p></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="center" bgcolor="#13434b" style="padding:0;Margin:0"><span class="es-button-border es-button-border-4" style="border-style:solid;border-color:#2CB543;background:#FFFFFF;border-width:0px;display:inline-block;border-radius:5px;width:auto"><a href="https://wa.me/message/PUJR7LNBCES4P1?utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-_EmFTq4zqcJUqV6RH9WJQw_0qoC_MfjK-cOOD0VZCVi_ZbQGAgidRDcceV4193G_SOvSq2" class="es-button es-button-3" target="_blank" style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:16px;color:#333333;border-style:solid;border-color:#FFFFFF;border-width:10px 20px 10px 20px;display:inline-block;background:#FFFFFF;border-radius:5px;font-weight:bold;font-style:normal;line-height:19px;width:auto;text-align:center">COTIZAR PALUMAR</a></span></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="center" bgcolor="#13434b" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#FFFFFF">Oprime el botón para más información</p></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="center" style="padding:20px;Margin:0;font-size:0"> 
+					  <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
+						<tr style="border-collapse:collapse"> 
+						 <td style="padding:0;Margin:0;border-bottom:1px solid #CCCCCC;background:none;height:1px;width:100%;margin:0px"></td> 
+						</tr> 
+					  </table></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="center" style="padding:0;Margin:0"><h2 style="Margin:0;line-height:34px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:28px;font-style:normal;font-weight:bold;color:#212121">PROYECTO COSTA LINDA</h2><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#131313">Proyecto de inversión&nbsp;</p></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="left" class="es-m-txt-c" style="padding:0;Margin:0;padding-top:15px"><strong></strong><h2 style="Margin:0;line-height:29px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:24px;font-style:normal;font-weight:bold;color:#212121">Proyecto cerca de la playa</h2><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#131313">Proyecto de inversión con acceso ubicado a menos de<strong><span>&nbsp;5 min de playa de Telchac Puerto</span></strong>&nbsp;y a 45 min de la ciudad son terrenos de propiedad privada listos para escriturar, todo el tema de servicios será de manera gratuita por parte del municipio de<strong><span>&nbsp;</span>Telchac.<br></strong></p></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="center" class="es-m-p0t es-m-p0b es-m-p15r es-m-p15l" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="https://hs-7785503.f.hubspotfree.net/hub/7785503/hubfs/Ubicacion%20Costa%20Linda.jpg?upscale=true&amp;width=2560&amp;upscale=true&amp;name=Ubicacion%20Costa%20Linda.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="600"></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="center" style="padding:20px;Margin:0;font-size:0"> 
+					  <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
+						<tr style="border-collapse:collapse"> 
+						 <td style="padding:0;Margin:0;border-bottom:1px solid #CCCCCC;background:none;height:1px;width:100%;margin:0px"></td> 
+						</tr> 
+					  </table></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="center" class="es-m-p0t es-m-p0b es-m-p15r es-m-p15l" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="https://hs-7785503.f.hubspotfree.net/hub/7785503/hubfs/Distancia%20de%20Costa%20linda.jpg?upscale=true&amp;width=2160&amp;upscale=true&amp;name=Distancia%20de%20Costa%20linda.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="600"></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="center" style="padding:0;Margin:0"><h2 style="Margin:0;line-height:34px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:28px;font-style:normal;font-weight:bold;color:#212121;text-align:center">¡Pregunta por la disponibilidad!</h2></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="left" class="es-m-txt-c" bgcolor="#13434b" style="padding:0;Margin:0;padding-top:15px"><h2 style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:24px;font-style:normal;font-weight:bold;color:#FFFFFF">Características Costa Linda:</h2> 
+					  <ul> 
+					   <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;Margin-bottom:15px;color:#FFFFFF">Anticipos de $7,560</li> 
+					   <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;Margin-bottom:15px;color:#FFFFFF">Financiamiento de terreno hasta los 24 meses</li> 
+					   <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;Margin-bottom:15px;color:#FFFFFF">Lotes de 300 m²</li> 
+					   <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;Margin-bottom:15px;color:#FFFFFF;text-align:justify">Lotes con acceso en calle blanca<br><br><strong>¡SOLICITA LA PROMOCIÓN DEL MES!</strong><br>Te podemos ofrecer toda la información necesaria de este proyecto hoy mismo solo tienes que hacernos saber tu interés y nos comunicaremos a la brevedad posible.</li> 
+					  </ul><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;color:#FFFFFF"><br></p></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="center" bgcolor="#13434b" style="padding:0;Margin:0"><span class="es-button-border es-button-border-4" style="border-style:solid;border-color:#2CB543;background:#FFFFFF;border-width:0px;display:inline-block;border-radius:5px;width:auto"><a href="https://wa.me/message/PUJR7LNBCES4P1?utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-_EmFTq4zqcJUqV6RH9WJQw_0qoC_MfjK-cOOD0VZCVi_ZbQGAgidRDcceV4193G_SOvSq2" class="es-button es-button-3" target="_blank" style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:16px;color:#333333;border-style:solid;border-color:#FFFFFF;border-width:10px 20px 10px 20px;display:inline-block;background:#FFFFFF;border-radius:5px;font-weight:bold;font-style:normal;line-height:19px;width:auto;text-align:center">COTIZAR COSTA LINDA</a></span></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="center" bgcolor="#13434b" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#FFFFFF">Oprime el botón para más información</p></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="center" style="padding:20px;Margin:0;font-size:0"> 
+					  <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
+						<tr style="border-collapse:collapse"> 
+						 <td style="padding:0;Margin:0;border-bottom:1px solid #CCCCCC;background:none;height:1px;width:100%;margin:0px"></td> 
+						</tr> 
+					  </table></td> 
+					</tr> 
+					<tr style="border-collapse:collapse"> 
+					 <td align="center" style="padding:0;Margin:0"><h2 style="Margin:0;line-height:29px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:24px;font-style:normal;font-weight:bold;color:#212121">MUCHAS GRACIAS POR TU TIEMPO, ¡NO DEJES PASAR ESTA OPORTUNIDAD!</h2><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#131313"><br></p></td> 
+					</tr> 
+				  </table></td> 
+				</tr> 
+			  </table></td> 
+			</tr> 
+		  </table></td> 
+		</tr> 
+	  </table> 
        <table cellpadding="0" cellspacing="0" class="es-content" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%"> 
          <tr style="border-collapse:collapse"> 
           <td align="center" bgcolor="#f8f9fd" style="padding:0;Margin:0;background-color:#F8F9FD"> 
@@ -288,139 +421,6 @@ td .es-button-border:hover a.es-button-5 {
                      </tr> 
                      <tr style="border-collapse:collapse"> 
                       <td align="center" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#FFFFFF">Oprime el botón para más información</p></td> 
-                     </tr> 
-                   </table></td> 
-                 </tr> 
-               </table></td> 
-             </tr> 
-           </table></td> 
-         </tr> 
-       </table> 
-       <table cellpadding="0" cellspacing="0" class="es-content" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%"> 
-         <tr style="border-collapse:collapse"> 
-          <td align="center" bgcolor="#ffffff" style="padding:0;Margin:0;background-color:#FFFFFF"> 
-           <table bgcolor="transparent" class="es-content-body" align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px"> 
-             <tr style="border-collapse:collapse"> 
-              <td class="es-m-p0t es-m-p20b es-m-p15r es-m-p15l" align="left" style="padding:0;Margin:0;padding-bottom:20px"> 
-               <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
-                 <tr style="border-collapse:collapse"> 
-                  <td align="center" valign="top" style="padding:0;Margin:0;width:600px"> 
-                   <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="center" style="padding:20px;Margin:0;font-size:0"> 
-                       <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
-                         <tr style="border-collapse:collapse"> 
-                          <td style="padding:0;Margin:0;border-bottom:1px solid #CCCCCC;background:none;height:1px;width:100%;margin:0px"></td> 
-                         </tr> 
-                       </table></td> 
-                     </tr> 
-                   </table></td> 
-                 </tr> 
-               </table></td> 
-             </tr> 
-           </table></td> 
-         </tr> 
-       </table> 
-       <table cellpadding="0" cellspacing="0" class="es-content" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%"> 
-         <tr style="border-collapse:collapse"> 
-          <td align="center" bgcolor="#ffffff" style="padding:0;Margin:0;background-color:#FFFFFF"> 
-           <table bgcolor="transparent" class="es-content-body" align="center" cellpadding="0" cellspacing="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px"> 
-             <tr style="border-collapse:collapse"> 
-              <td class="es-m-p0t es-m-p20b es-m-p15r es-m-p15l" align="left" style="padding:0;Margin:0;padding-bottom:20px"> 
-               <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
-                 <tr style="border-collapse:collapse"> 
-                  <td align="center" valign="top" style="padding:0;Margin:0;width:600px"> 
-                   <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="center" style="padding:0;Margin:0"><h2 style="Margin:0;line-height:34px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:28px;font-style:normal;font-weight:bold;color:#212121;text-align:center">PROYECTO PALUMAR 2</h2><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#131313">Proyecto Semi-Urbanizado</p></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="left" class="es-m-txt-c" style="padding:0;Margin:0;padding-top:15px"><h2 style="Margin:0;line-height:29px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:24px;font-style:normal;font-weight:bold;color:#212121"><strong>Proyecto cerca de la playa</strong></h2><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#131313">Es un proyecto de lotes semi urbanizados&nbsp;<strong>se encuentra a<span>&nbsp;</span><span>8 min</span><span>&nbsp;</span>de la playa de Chicxulub puerto</strong>&nbsp;y 25 min del norte de la ciudad, son terrenos de propiedad privada listos para escriturar, todo el tema de servicios será de manera gratuita por parte del municipio de<strong><span>&nbsp;</span>Chicxulub Puerto.<br></strong><br></p></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="center" class="es-m-p0t es-m-p0b es-m-p15r es-m-p15l" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="https://hs-7785503.f.hubspotfree.net/hub/7785503/hubfs/Mapa%20de%20tiempos.png?upscale=true&amp;width=5100&amp;upscale=true&amp;name=Mapa%20de%20tiempos.png" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="600"></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="center" style="padding:0;Margin:0"><h2 style="Margin:0;line-height:34px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:28px;font-style:normal;font-weight:bold;color:#212121;text-align:center">UBICACION DE PALUMAR</h2></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="center" class="es-m-p0t es-m-p0b es-m-p15r es-m-p15l" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="https://hs-7785503.f.hubspotfree.net/hub/7785503/hubfs/Etapa%202.png?upscale=true&amp;width=9168&amp;upscale=true&amp;name=Etapa%202.png" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="600"></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="center" bgcolor="#13434b" style="padding:0;Margin:0"><h2 style="Margin:0;line-height:34px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:28px;font-style:normal;font-weight:bold;color:#FFFFFF;text-align:center">¡Pregunta por la disponibilidad!</h2></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="left" class="es-m-txt-c" bgcolor="#13434b" style="padding:0;Margin:0;padding-right:5px;padding-left:10px;padding-top:15px"><h2 style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:24px;font-style:normal;font-weight:bold;color:#FFFFFF"><strong>Características de Palumar:</strong></h2> 
-                       <ul> 
-                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;Margin-bottom:15px;color:#FFFFFF">Anticipos desde $15,000</li> 
-                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;Margin-bottom:15px;color:#FFFFFF">Financiamiento en terreno hasta los 42 meses</li> 
-                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;Margin-bottom:15px;color:#FFFFFF">Lotes de 350m2</li> 
-                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;Margin-bottom:15px;color:#FFFFFF">Lotes con acceso en calle blanca</li> 
-                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;Margin-bottom:15px;color:#FFFFFF">Se entregará con mojoneras frontales<br><br><strong>¡SOLICITA LA PROMOCIÓN DEL MES!</strong></li> 
-                       </ul><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;color:#FFFFFF"><br></p></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="center" bgcolor="#13434b" style="padding:0;Margin:0"><span class="es-button-border es-button-border-4" style="border-style:solid;border-color:#2CB543;background:#FFFFFF;border-width:0px;display:inline-block;border-radius:5px;width:auto"><a href="https://wa.me/message/PUJR7LNBCES4P1?utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-_EmFTq4zqcJUqV6RH9WJQw_0qoC_MfjK-cOOD0VZCVi_ZbQGAgidRDcceV4193G_SOvSq2" class="es-button es-button-3" target="_blank" style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:16px;color:#333333;border-style:solid;border-color:#FFFFFF;border-width:10px 20px 10px 20px;display:inline-block;background:#FFFFFF;border-radius:5px;font-weight:bold;font-style:normal;line-height:19px;width:auto;text-align:center">COTIZAR PALUMAR</a></span></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="center" bgcolor="#13434b" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#FFFFFF">Oprime el botón para más información</p></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="center" style="padding:20px;Margin:0;font-size:0"> 
-                       <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
-                         <tr style="border-collapse:collapse"> 
-                          <td style="padding:0;Margin:0;border-bottom:1px solid #CCCCCC;background:none;height:1px;width:100%;margin:0px"></td> 
-                         </tr> 
-                       </table></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="center" style="padding:0;Margin:0"><h2 style="Margin:0;line-height:34px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:28px;font-style:normal;font-weight:bold;color:#212121">PROYECTO COSTA LINDA</h2><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#131313">Proyecto de inversión&nbsp;</p></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="left" class="es-m-txt-c" style="padding:0;Margin:0;padding-top:15px"><strong></strong><h2 style="Margin:0;line-height:29px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:24px;font-style:normal;font-weight:bold;color:#212121">Proyecto cerca de la playa</h2><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#131313">Proyecto de inversión con acceso ubicado a menos de<strong><span>&nbsp;5 min de playa de Telchac Puerto</span></strong>&nbsp;y a 45 min de la ciudad son terrenos de propiedad privada listos para escriturar, todo el tema de servicios será de manera gratuita por parte del municipio de<strong><span>&nbsp;</span>Telchac.<br></strong></p></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="center" class="es-m-p0t es-m-p0b es-m-p15r es-m-p15l" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="https://hs-7785503.f.hubspotfree.net/hub/7785503/hubfs/Ubicacion%20Costa%20Linda.jpg?upscale=true&amp;width=2560&amp;upscale=true&amp;name=Ubicacion%20Costa%20Linda.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="600"></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="center" style="padding:20px;Margin:0;font-size:0"> 
-                       <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
-                         <tr style="border-collapse:collapse"> 
-                          <td style="padding:0;Margin:0;border-bottom:1px solid #CCCCCC;background:none;height:1px;width:100%;margin:0px"></td> 
-                         </tr> 
-                       </table></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="center" class="es-m-p0t es-m-p0b es-m-p15r es-m-p15l" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="https://hs-7785503.f.hubspotfree.net/hub/7785503/hubfs/Distancia%20de%20Costa%20linda.jpg?upscale=true&amp;width=2160&amp;upscale=true&amp;name=Distancia%20de%20Costa%20linda.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="600"></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="center" style="padding:0;Margin:0"><h2 style="Margin:0;line-height:34px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:28px;font-style:normal;font-weight:bold;color:#212121;text-align:center">¡Pregunta por la disponibilidad!</h2></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="left" class="es-m-txt-c" bgcolor="#13434b" style="padding:0;Margin:0;padding-top:15px"><h2 style="Margin:0;line-height:24px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:24px;font-style:normal;font-weight:bold;color:#FFFFFF">Características Costa Linda:</h2> 
-                       <ul> 
-                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;Margin-bottom:15px;color:#FFFFFF">Anticipos de $7,560</li> 
-                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;Margin-bottom:15px;color:#FFFFFF">Financiamiento de terreno hasta los 24 meses</li> 
-                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;Margin-bottom:15px;color:#FFFFFF">Lotes de 300 m²</li> 
-                        <li style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;Margin-bottom:15px;color:#FFFFFF;text-align:justify">Lotes con acceso en calle blanca<br><br><strong>¡SOLICITA LA PROMOCIÓN DEL MES!</strong><br>Te podemos ofrecer toda la información necesaria de este proyecto hoy mismo solo tienes que hacernos saber tu interés y nos comunicaremos a la brevedad posible.</li> 
-                       </ul><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:16px;color:#FFFFFF"><br></p></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="center" bgcolor="#13434b" style="padding:0;Margin:0"><span class="es-button-border es-button-border-4" style="border-style:solid;border-color:#2CB543;background:#FFFFFF;border-width:0px;display:inline-block;border-radius:5px;width:auto"><a href="https://wa.me/message/PUJR7LNBCES4P1?utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-_EmFTq4zqcJUqV6RH9WJQw_0qoC_MfjK-cOOD0VZCVi_ZbQGAgidRDcceV4193G_SOvSq2" class="es-button es-button-3" target="_blank" style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:16px;color:#333333;border-style:solid;border-color:#FFFFFF;border-width:10px 20px 10px 20px;display:inline-block;background:#FFFFFF;border-radius:5px;font-weight:bold;font-style:normal;line-height:19px;width:auto;text-align:center">COTIZAR COSTA LINDA</a></span></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="center" bgcolor="#13434b" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#FFFFFF">Oprime el botón para más información</p></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="center" style="padding:20px;Margin:0;font-size:0"> 
-                       <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
-                         <tr style="border-collapse:collapse"> 
-                          <td style="padding:0;Margin:0;border-bottom:1px solid #CCCCCC;background:none;height:1px;width:100%;margin:0px"></td> 
-                         </tr> 
-                       </table></td> 
-                     </tr> 
-                     <tr style="border-collapse:collapse"> 
-                      <td align="center" style="padding:0;Margin:0"><h2 style="Margin:0;line-height:29px;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:24px;font-style:normal;font-weight:bold;color:#212121">MUCHAS GRACIAS POR TU TIEMPO, ¡NO DEJES PASAR ESTA OPORTUNIDAD!</h2><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#131313"><br></p></td> 
                      </tr> 
                    </table></td> 
                  </tr> 
