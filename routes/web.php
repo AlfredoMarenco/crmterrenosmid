@@ -38,6 +38,10 @@ Route::prefix('cotizadores')->middleware('auth')->group(function () {
 
 });
 
+Route::get('crm/vistas/cotizadorgrupoorve',function(){
+    redirect('crm/vistas/cotizadorgrupoorve.php');
+})->name('cotizador.grupoorve');
+ 
 Route::get('sistema',[ConfigurationController::class, 'index'])->name('sistem.config');
 Route::get('desarrollos',[DesarrollosController::class, 'index'])->name('desarrollos');
 
