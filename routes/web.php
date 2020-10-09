@@ -38,7 +38,6 @@ Route::prefix('cotizadores')->middleware('auth')->group(function () {
 
 });
 
-
 Route::get('sistema',[ConfigurationController::class, 'index'])->name('sistem.config');
 Route::get('desarrollos',[DesarrollosController::class, 'index'])->name('desarrollos');
 
