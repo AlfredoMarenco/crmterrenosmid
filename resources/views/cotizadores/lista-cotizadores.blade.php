@@ -10,7 +10,7 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="text-center my-3"><h3>LISTA DE INMOBILIARIAS</h3></div>
                 <div class="list-group text-center">
-                    <a href="{{ route('cotizadorgrupoorve') }}" class="font-weight-bold list-group-item list-group-item-action">GRUPO ORVE</a>
+                    <a href="crm/vistas/cotizadorgrupoorve.php" class="font-weight-bold list-group-item list-group-item-action">GRUPO ORVE</a>
                     <a href="#" class="font-weight-bold list-group-item list-group-item-action">SOMMET</a>
                   </div>
             </div>
