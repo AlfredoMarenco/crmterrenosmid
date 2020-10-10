@@ -122,7 +122,8 @@ td .es-button-border:hover a.es-button-5 {
                   <td align="center" valign="top" style="padding:0;Margin:0;width:540px"> 
                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
                      <tr style="border-collapse:collapse"> 
-                      <td align="center" style="padding:0;Margin:0;font-size:0px"><img src="http://crm.terrenosmidyucatan.com/public/crm/email/confirm_read_email.php?id={{ $info->id }}" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="130"></td> 
+                      <td align="center" style="padding:0;Margin:0;font-size:0px"><img src="http://crm.terrenosmidyucatan.com/public/crm/email/confirm_read_email.php?id={{$info->id}}" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="130"></td> 
+                      {{ $info->id }}
                      </tr> 
                    </table></td> 
                  </tr> 
