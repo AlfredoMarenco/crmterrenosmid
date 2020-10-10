@@ -114,7 +114,11 @@
                         <th scope="row">1</th>
                         <td>Correo Bienvenida</td>
                         <td>
-                            <span><i class="fas fa-times text-danger"></i> {{ $detallesCliente->lead1 }}</span>
+                            @if ($detallesCliente->lead1 == 'no-complete')
+                                <span><i class="fas fa-times text-danger"></i>{{ $detallesCliente->lead1 }}</span>
+                            @else
+                                <span><i class="fas fa-check text-success"></i></i>{{ $detallesCliente->lead1 }}</span>
+                            @endif
                         </td>
                       </tr>
                     </tbody>
