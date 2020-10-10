@@ -101,6 +101,26 @@
                           </form>
                     </div>
                 </div>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Seguimientos</th>
+                        <th scope="col">Estatus</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Correo Bienvenida</td>
+                        <td>
+                            @if ($detallesCliente=='no-complete')
+                                <span><i class="fas fa-times text-danger"></i></span>
+                            @endif
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
             </div>
         </div>
     </div>
