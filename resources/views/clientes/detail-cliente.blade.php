@@ -115,7 +115,7 @@
                         <td>Correo Bienvenida</td>
                         <td>
                             @if ($detallesCliente->lead1 == 'no-complete')
-                                <span><i class="fas fa-times text-danger"></i></span>
+                                <span><i class="fas fa-times text-danger"></i> {{ $detallesCliente->lead1 }}</span>
                             @endif
                         </td>
                       </tr>
