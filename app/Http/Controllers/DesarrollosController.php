@@ -14,9 +14,7 @@ class DesarrollosController extends Controller
      */
     public function index()
     {
-        $desarrollos = Desarrollo::all();
-
-        return view('components.desarrollos.list', compact($desarrollos));
+            return view('desarrollos.index');
     }
 
     /**

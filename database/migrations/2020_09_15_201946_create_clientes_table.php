@@ -21,6 +21,10 @@ class CreateClientesTable extends Migration
             $table->string('email')->unique();
             $table->string('telefono')->nullable();
             $table->string('desarrollo')->nullable();
+            $table->string('lead1')->default('no-complete');
+            $table->string('lead2')->default('no-complete');
+            $table->string('lead3')->default('no-complete');
+            $table->string('lead4')->default('no-complete');
             $table->string('pais')->nullable();
             $table->string('campana')->nullable();
             $table->string('estado')->default('Nuevo');
