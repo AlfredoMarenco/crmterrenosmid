@@ -57,7 +57,7 @@
                                         <a class="text-secondary" href="{{ route('clientes.detalles',$data) }}">{{ $data->nombre . " " . $data->primerApellido }}</a>
                                     </td>
                                     <td><a href="{{ route('clientes.phonetrack',$data) }}" class="text-secondary">{{'+52'}}{{ $data->telefono }}</a></td>
-                                    <td>{{ $data->email }}</td>
+                                    <td> <a href="{{ route('clientes.emailtrack',$data) }}" class="text-secondary">{{ $data->email }} </a></td>
                                     <td>{{ $data->user->name}}</td>
                                     <td>
                                         <a href="{{ route('clientes.formedit',$data) }}"><i class="text-secondary far fa-edit"></i></a>
@@ -106,7 +106,7 @@
                                         <a class="text-secondary" href="{{ route('clientes.detalles',$data) }}">{{ $data->nombre . " " . $data->primerApellido }}</a>
                                     </td>
                                     <td>{{'+52'}}{{ $data->telefono }}</td>
-                                    <td>{{ $data->email }}</td>
+                                    <td> <a href="{{ route('clientes.emailtrack',$data) }}">{{ $data->email }} </a></td>
                                     <td>
                                         <a href="{{ route('clientes.formedit',$data) }}"><i class="text-secondary far fa-edit"></i></a>
                                         <a href="{{ route('clientes.delete',$data) }}"><i class="text-secondary fas fa-eraser"></i></a>

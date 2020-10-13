@@ -73,8 +73,7 @@ class ClientesController extends Controller
         $newCliente->pais = $request->pais;
         $newCliente->campana = $request->campana;
         $newCliente->user_id = $request->user_id;
-        $email = Auth::user()->name;
-        Mail::to($newCliente->email)->send(new Bienvenida($newCliente , $email));
+        Mail::to($newCliente->email)->send(new Bienvenida($newCliente));
         $newCliente->save();
         return redirect('clientes/tabla')->with('success', 'Cliente agregado con exito!');  
     }
@@ -179,5 +178,17 @@ class ClientesController extends Controller
         return view('clientes.phone-track',compact('detallesCliente','asesor'));
     }
 
+     /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function showEmailTrack($id)
+    {
+        $detallesCliente = Cliente::findOrFail($id);
+        $asesor = User::findOrFail(auth()->id());
+        return view('clientes.email-track',compact('detallesCliente','asesor'));
+    }
 
 }

@@ -20,6 +20,7 @@ Route::prefix('clientes')->middleware('auth')->group(function () {
     Route::get('/detalles/{id}', [ClientesController::class, 'show'])->name('clientes.detalles');
     Route::any('/editstatus/{id}', [ClientesController::class, 'updateStatus'])->name('clientes.updatestatus');
     Route::any('/phone-track/{id}', [ClientesController::class, 'showPhoneTrack'])->name('clientes.phonetrack');
+    Route::any('/email-track/{id}', [ClientesController::class, 'showEmailTrack'])->name('clientes.emailtrack');
 });
 
 Route::prefix('users')->middleware('auth')->group(function () {

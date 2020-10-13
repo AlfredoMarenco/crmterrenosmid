@@ -11,16 +11,14 @@ class Bienvenida extends Mailable
 {
     use Queueable, SerializesModels;
     public $info;
-    public $asesor;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($data,$auth)
+    public function __construct($data)
     {
         $this->info = $data;
-        $this->asesor = $auth;
     }
 
     /**

@@ -1,0 +1,4 @@
+[28-Sep-2020 20:04:19 UTC] PHP Notice:  Undefined index: email in /home/boleteac/crm.terrenosmidyucatan.com/login.php on line 6
+[28-Sep-2020 20:04:19 UTC] PHP Notice:  Undefined index: pass in /home/boleteac/crm.terrenosmidyucatan.com/login.php on line 7
+[28-Sep-2020 20:04:19 UTC] PHP Notice:  Undefined variable: hash in /home/boleteac/crm.terrenosmidyucatan.com/login.php on line 27
+[28-Sep-2020 20:04:19 UTC] PHP Notice:  Undefined variable: hash in /home/boleteac/crm.terrenosmidyucatan.com/login.php on line 30
