@@ -3,6 +3,7 @@
 use App\Http\Controllers\ClientesController;
 use App\Http\Controllers\CotizadoresController;
 use App\Http\Controllers\DesarrollosController;
+use App\Http\Controllers\EmailController;
 use Illuminate\Support\Facades\Route;
 use PHPUnit\TextUI\XmlConfiguration\Group;
 
@@ -39,10 +40,15 @@ Route::prefix('cotizadores')->middleware('auth')->group(function () {
 
 });
 
+Route::prefix('mail')->middleware('auth')->group(function () {
+    Route::get('email',[EmailController::class, 'index'])->name('email.index');
+    Route::post('create',[EmailController::class, 'create'])->name('email.create');
+});
 
- 
+
 Route::get('sistema',[ConfigurationController::class, 'index'])->name('sistem.config');
 Route::get('desarrollos',[DesarrollosController::class, 'index'])->name('desarrollos');
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
